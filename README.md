@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/why-not-phoenix/newsletter-signup-frontend-mentor/upload](https://github.com/why-not-phoenix/newsletter-signup-frontend-mentor/upload)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
