@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+
+</head>
+<body class="flex">
+
+  <!-- Sign-up form start -->
+   <div class="card flex">
+    <header>
+      <picture>
+        <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 940px)">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="product-image" class="card-img-top product-image">
+      </picture>
+     </header>
+     <main class="card-body">
+      <div class="card-text flex">
+        <h1>Stay updated!</h1>
+        <p>  Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li class="flex"><img src="assets/images/icon-list.svg" alt=""><span>Product discovery and building what matters</span></li>
+          <li class="flex"><img src="assets/images/icon-list.svg" alt=""><span>Measuring to ensure updates are a success</span></li>
+          <li class="flex"><img src="assets/images/icon-list.svg" alt="">And much more!</li>
+        </ul>
+      </div>
+      <form action="" id="form" novalidate>
+        <div class="email-labels-div flex">
+          <label for="email">Email address</label>
+          <label for="email" class="error-message hide">valid email required</label>
+        </div>
+        <input type="email" id="email" class="input-box email-base" name="email" value="email@company.com" required><br>
+        <input type="submit" class="btn input-box" value="Subscribe to monthly newsletter">
+      </form>
+      
+     </main>
+   </div>
+
+   <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/why-not-phoenix">Dominion</a>.
+    </div>
+  </footer>
+
+
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <div class="success-box hide">
+    <header>
+      <img src="assets/images/icon-success.svg" alt="">
+      <h1>Thanks for subscribing!</h1>
+    </header>
+    <div class="card-text flex">
+      <main>
+      
+        <p> A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+          Please open it and click the button inside to confirm your subscription.</p>
+      </main>
+      <footer>
+        <button class="btn input-box dismiss">Dismiss message</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Success message end -->
+
+  <script src="index.js"></script>
+</body>
+</html>

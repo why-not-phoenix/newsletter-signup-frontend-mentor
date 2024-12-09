@@ -1,0 +1,216 @@
+
+/* Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+    font-style: normal; /* Regular style */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: normal; /* Bold style */
+}
+
+/* General Styles */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: hsl(234, 29%, 20%);
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header,
+picture img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Styles */
+.card-body {
+    padding: 2.5rem 1.53rem;
+}
+
+.card-text {
+    gap: 1.5rem;
+}
+
+li.flex {
+    list-style: none;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* Form Styles */
+form {
+    margin-top: 1.5rem;
+}
+
+.email-labels-div {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.error-message {
+    color: hsl(4, 100%, 67%);
+}
+
+.input-box {
+    height: 3.37rem;
+    width: 100%;
+    padding: 0 1.5rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 0.062rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.email-base {
+    margin: 0.62rem 0 1.5rem;
+    border-color: hsl(231, 7%, 60%);
+    color: hsl(231, 7%, 60%);
+}
+
+.email-base:hover {
+    cursor: pointer;
+}
+
+.email-error {
+    color: hsl(4, 100%, 67%);
+    border-color: hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 67%, 0.1);
+}
+
+.btn {
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, hsl(348, 100%, 66%), hsl(4, 100%, 67%));
+    cursor: pointer;
+}
+
+/*SUCCESS*/
+.success-box {
+    padding: 9.31rem 1.53rem 2.5rem;
+}
+
+.success-box h1 {
+    margin: 2.12rem 0 1.25rem;
+}
+
+.success-box div {
+    gap: 16.62rem;
+}
+
+
+
+/* Attribution */
+.attribution {
+    font-size: 0.81rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Medium Screens */
+@media (min-width: 500px) {
+    body {
+        background-color: hsl(234, 29%, 20%);
+    }
+
+    .card {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1.5rem;
+    }
+
+    
+    .attribution {
+        font-size: 1rem;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .attribution a {
+        color: hsl(4, 100%, 67%);
+    }
+    
+    .success-box {
+        background-color: hsl(0, 0%, 100%);
+        padding: 47px 4rem 4rem;
+        max-width: 500px;
+        border-radius: 1.5rem;
+        height: fit-content;
+    }
+
+    .success-box div {
+        gap: 2.62rem;
+    }
+}
+
+
+/* Large screens */
+@media (min-width: 940px) {
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    .card {
+        flex-direction: row-reverse;
+        padding: 1.5rem;
+        max-width: 920px;
+    }
+
+    header {
+        flex: 1;
+        max-width: 400px;
+        max-height: 590px;
+    }
+
+    .card-body {
+        padding: 4.3rem 4rem;
+        flex: 1;
+    }
+}
+
+
+/* Utility classes*/
+.hide {
+    display: none;
+}
